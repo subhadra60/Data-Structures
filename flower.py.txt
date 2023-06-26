@@ -1,0 +1,22 @@
+class Flower:
+  def __init__(self,flowerName,petalNumber,flowerPrice):
+    self.name=flowerName
+    self.petals=petalNumber
+    self.price=flowerPrice
+  def setName(self,flowerName):
+    self.name= flowerName
+  def setPetals(self,petalNumber):
+    self.petals=petalNumber
+  def setPrice(self,flowerPrice):
+    self.price=flowerPrice
+  def getName(self):
+    return self.name
+  def getPetals(self):
+    return self.petals
+  def getPrice(self):
+    return self.price
+f1=Flower("jasmine",6,60.00)
+print("Flower details:")
+print("Name:",f1.getName())
+print("Number of petals:",f1.getPetals())
+print("Price:",f1.getPrice())
